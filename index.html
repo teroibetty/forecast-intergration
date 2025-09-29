@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Hali Hewa</title>
+  </head>
+  <div class="container">
+    <body>
+      <header>
+        <form class="input-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input-form"
+            id="search-input-form"
+          />
+          <input type="submit" value="Search" class="submit-input-form" />
+        </form>
+      </header>
+      <main>
+        <h1 class="input-city" id="input-city"></h1>
+        <div class="app-details">
+          <p>
+            <span id="current-time"></span> ,
+            <span id="weather-description"></span>
+            <br />
+            Humidity: <strong id="humidity"> </strong> , Wind:
+            <strong id="wind-speed"></strong>
+          </p>
+          <div class="temperature">
+            <span id="temp-icon"></span
+            ><span class="temp-value" id="temp-value"></span
+            ><span class="metric-value">°C</span>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Mon</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temps">
+              <div class="weather-forecast-temp"><strong>20° </strong></div>
+              <div class="weather-forecast-temp">10°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temps">
+              <div class="weather-forecast-temp"><strong>20° </strong></div>
+              <div class="weather-forecast-temp">10°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temps">
+              <div class="weather-forecast-temp"><strong>20° </strong></div>
+              <div class="weather-forecast-temp">10°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thur</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temps">
+              <div class="weather-forecast-temp"><strong>20° </strong></div>
+              <div class="weather-forecast-temp">10°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Fri</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temps">
+              <div class="weather-forecast-temp"><strong>20° </strong></div>
+              <div class="weather-forecast-temp">10°</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was built by
+        <a href="https://github.com/teroibetty" target="_blank">
+          Betty Teroi
+        </a>
+        and is open source on
+        <a href="https://github.com/teroibetty/Hali-hewa-app" target="_blank">
+          GitHub
+        </a>
+        and hosted on
+        <a href="https://hali-hewa-podcst.netlify.app/" target="_blank">
+          Netlify </a
+        >.
+      </footer>
+      <script src="index.js"></script>
+    </body>
+  </div>
+</html>
