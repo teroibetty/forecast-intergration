@@ -54,4 +54,28 @@ function submitValue(event) {
 let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", submitValue);
 
+function showForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-icon">🌤️</div>
+    <div class="weather-forecast-temps">
+      <div class="weather-forecast-temp">
+        <strong>20° </strong>
+      </div>
+      <div class="weather-forecast-temp">10°</div>
+    </div>
+  </div>
+`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
+
 searchCity("Nairobi");
+showForecast();
