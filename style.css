@@ -35,6 +35,9 @@ a {
   cursor: pointer;
   margin-left: 5px;
 }
+.submit-input-form:hover {
+  background-color: #6b43c8;
+}
 .input-city {
   padding-top: 20px;
 }
