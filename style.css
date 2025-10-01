@@ -83,6 +83,7 @@ p strong {
   text-align: center;
   font-size: 25px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .weather-forecast-temps {
   text-align: center;
